@@ -1,0 +1,156 @@
+// import reenie beanie and titilium web from google fonts
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Titillium+Web:wght@300;400&display=swap');
+
+// colors
+$bg:        #eee;
+$fg:        #2e2e2c;
+$red:       #d5bbb4;
+
+// RESET
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $bg;
+    color: $fg;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 400;
+    color: $red;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3 {
+    color: $red;
+    margin: .5rem 0;
+    font-weight: 400;
+}
+
+
+
+
+// ICONS
+
+
+.lab {
+    color: $fg;
+}
+
+
+
+// UTILS
+
+.btn {
+    border: 1px solid $fg;
+    padding: .2rem 1.5rem;
+    color: $fg;
+}
+
+.focus {
+    color: $fg;
+}
+
+
+// LAYOUT
+
+.container {
+    width: 960px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.section {
+    height: 100vh;
+}
+
+
+// NAVBAR
+
+.navbar {
+    // background-color: $red;
+    height: 80px;
+}
+
+.navbar nav ul {
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin: 1rem;
+    padding: 1rem 0;
+}
+
+
+
+// CARDS
+
+.card {
+    border: 1px solid $fg;
+
+    .card-content {
+        padding: 1rem;
+    }
+
+    .card-action {
+        padding: 1rem;
+    }
+}
+
+
+// HERO
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+    .hero-display {
+        display: flex;         
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+
+        .hero-title {
+            font-family: 'Reenie Beanie', cursive;
+            font-size: 4em;
+            color: $fg;
+        }
+
+        .actions {
+            padding: 2rem 0;
+
+            .btn {
+                margin-right: 1.5rem; 
+            }
+        }
+    }
+}
+
+
+
+//
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap: 10px;
+}
