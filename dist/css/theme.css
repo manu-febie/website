@@ -17,7 +17,7 @@ img {
 a {
   text-decoration: none;
   font-weight: 400;
-  color: #d5bbb4; }
+  color: #bcbbd5; }
 
 li {
   list-style: none; }
@@ -25,28 +25,34 @@ li {
 h1,
 h2,
 h3 {
-  color: #d5bbb4;
+  color: #bcbbd5;
   margin: .5rem 0;
   font-weight: 400; }
 
 .lab {
   color: #2e2e2c; }
 
+.highlight {
+  color: #bcbbd5; }
+
+.shadow {
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2); }
+
 .btn {
-  border: 1px solid #2e2e2c;
+  border: 1px solid #bcbbd5;
   padding: .2rem 1.5rem;
-  color: #2e2e2c; }
+  color: #bcbbd5; }
 
 .focus {
   color: #2e2e2c; }
+
+.section {
+  margin: 4rem 0; }
 
 .container {
   width: 960px;
   max-width: 90%;
   margin: 0 auto; }
-
-#about {
-  height: 100vh; }
 
 .navbar {
   height: 80px; }
@@ -58,12 +64,23 @@ h3 {
   margin: 1rem;
   padding: 1rem 0; }
 
-.card {
-  border: 1px solid #2e2e2c; }
-  .card .card-content {
-    padding: 1rem; }
-  .card .card-action {
-    padding: 1rem; }
+.card .card-title {
+  padding: .5rem;
+  font-size: 1.1em;
+  color: #bcbbd5; }
+
+.card .card-content {
+  padding: 1rem; }
+  .card .card-content .tags {
+    font-size: .8em;
+    text-transform: uppercase; }
+  .card .card-content .status {
+    font-size: .8em;
+    color: #bcbbd5; }
+
+.card .card-action {
+  padding: 1rem;
+  text-align: right; }
 
 .hero {
   display: flex;
@@ -87,3 +104,19 @@ h3 {
   width: 32%;
   margin-left: 1%;
   margin-top: 1%; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; }
+  .row .col-half {
+    flex: 0 0 calc(100% / 12 * 6); }
+
+.footer {
+  height: 40vh;
+  margin-top: 4rem;
+  background: #bcbbd5;
+  color: #eee;
+  display: flex; }
+  .footer h3 {
+    color: #e1e1e1; }

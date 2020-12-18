@@ -4,7 +4,7 @@
 // colors
 $bg:        #eee;
 $fg:        #2e2e2c;
-$red:       #d5bbb4;
+$magenta:   #bcbbd5;
 
 // RESET
 
@@ -29,7 +29,7 @@ img {
 a {
     text-decoration: none;
     font-weight: 400;
-    color: $red;
+    color: $magenta;
 }
 
 li {
@@ -39,7 +39,7 @@ li {
 h1,
 h2,
 h3 {
-    color: $red;
+    color: $magenta;
     margin: .5rem 0;
     font-weight: 400;
 }
@@ -58,10 +58,18 @@ h3 {
 
 // UTILS
 
+.highlight {
+    color: $magenta;
+}
+
+.shadow {
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+}
+
 .btn {
-    border: 1px solid $fg;
+    border: 1px solid $magenta;
     padding: .2rem 1.5rem;
-    color: $fg;
+    color: $magenta;
 }
 
 .focus {
@@ -71,20 +79,20 @@ h3 {
 
 // LAYOUT
 
+.section {
+    margin: 4rem 0;
+}
+
 .container {
     width: 960px;
     max-width: 90%;
     margin: 0 auto;
 }
 
-#about {
-    height: 100vh;
-}
-
 // NAVBAR
 
 .navbar {
-    // background-color: $red;
+    // background-color: $magenta;
     height: 80px;
 }
 
@@ -102,14 +110,31 @@ h3 {
 // CARDS
 
 .card {
-    border: 1px solid $fg;
+
+    .card-title {
+        padding: .5rem;
+        font-size: 1.1em;
+        color: $magenta;
+    }
 
     .card-content {
         padding: 1rem;
+
+        .tags {
+            font-size: .8em;
+            text-transform: uppercase;
+            
+        }
+
+        .status {
+            font-size: .8em;
+            color: $magenta;
+        }
     }
 
     .card-action {
         padding: 1rem;
+        text-align: right;
     }
 }
 
@@ -120,7 +145,7 @@ h3 {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    
+
     .hero-display {
         display: flex;         
         flex-direction: column;
@@ -152,3 +177,28 @@ h3 {
     margin-left: 1%;
     margin-top: 1%;
 }
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .col-half {
+        flex: 0 0 calc(100% / 12 * 6);
+    }
+}
+
+
+// FOOTER
+
+.footer {
+    height: 40vh;
+    margin-top: 4rem;
+    background: $magenta;
+    color: #eee;
+    display: flex;
+
+    h3 { color: #e1e1e1; }
+}
+
