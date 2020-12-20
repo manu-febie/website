@@ -1,10 +1,11 @@
-// import reenie beanie and titilium web from google fonts
-@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Titillium+Web:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&family=Reenie+Beanie&display=swap');
 
 // colors
-$bg:        #eee;
-$fg:        #2e2e2c;
-$magenta:   #bcbbd5;
+$bg:                #eee;
+$fg:                #2e2e2c;
+$primary:           #ea6962;
+$primary-accent:    #FF8B85;
+
 
 // RESET
 
@@ -17,71 +18,27 @@ $magenta:   #bcbbd5;
 body {
     background-color: $bg;
     color: $fg;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Nanum Gothic Coding', monospace;
     font-size: 16px;
     font-weight: 400;
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 a {
     text-decoration: none;
     font-weight: 400;
-    color: $magenta;
+    color: $primary;
 }
 
 li {
     list-style: none;
 }
 
-h1,
-h2,
-h3 {
-    color: $magenta;
-    margin: .5rem 0;
-    font-weight: 400;
-}
-
-
-
-
-// ICONS
-
-
-.lab {
-    color: $fg;
-}
-
-
-
-// UTILS
-
-.highlight {
-    color: $magenta;
-}
-
-.shadow {
-    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
-}
-
-.btn {
-    border: 1px solid $magenta;
-    padding: .2rem 1.5rem;
-    color: $magenta;
-}
-
-.focus {
-    color: $fg;
-}
-
-
-// LAYOUT
-
-.section {
-    margin: 4rem 0;
-}
+// layout
 
 .container {
     width: 960px;
@@ -89,116 +46,132 @@ h3 {
     margin: 0 auto;
 }
 
-// NAVBAR
 
-.navbar {
-    // background-color: $magenta;
-    height: 80px;
-}
 
-.navbar nav ul {
-    display: flex;
-}
+// icons
 
-.navbar nav ul li {
-    margin: 1rem;
-    padding: 1rem 0;
+.lab {
+    font-size: 1.2em;
 }
 
 
+// text utils
 
-// CARDS
+.display {
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 3em;
+}
 
-.card {
+.highlight {
+    color: $primary;
+}
 
-    .card-title {
-        padding: .5rem;
-        font-size: 1.1em;
-        color: $magenta;
-    }
-
-    .card-content {
-        padding: 1rem;
-
-        .tags {
-            font-size: .8em;
-            text-transform: uppercase;
-            
-        }
-
-        .status {
-            font-size: .8em;
-            color: $magenta;
-        }
-    }
-
-    .card-action {
-        padding: 1rem;
-        text-align: right;
-    }
+.brand {
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 1.5em;
 }
 
 
-// HERO
+.shadow {
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+}
+
+
+.btn {
+    background-color: $primary;
+    color: $bg;
+    border-left: 4px solid $primary-accent;
+    margin: 1rem 0;
+    padding: .8rem 1.5rem;
+    text-transform: uppercase;
+}
+
+// hero
 
 .hero {
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    justify-content: space-between;
 
-    .hero-display {
-        display: flex;         
+    .hero-content {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         height: 100%;
 
-        .hero-title {
-            font-family: 'Reenie Beanie', cursive;
-            font-size: 4em;
-            color: $fg;
+        .sepa {
+            height: 1px;
+            margin: 1em 0;
+            border: 1px solid #282828;
+            width: 25%;
         }
 
-        .actions {
-            padding: 2rem 0;
+        .tagline {
+            margin: 1rem 0;
+        }
 
-            .btn {
-                margin-right: 1.5rem; 
-            }
+        .action {
+            margin: 2rem 0;
         }
     }
 }
 
 
 
-// GALLERY
+// projects
 
-.gallery-item {
-    width: 32%;
-    margin-left: 1%;
-    margin-top: 1%;
+#projects {
+    background-color: $primary;
+    color: $bg;
+    height: 100%;
+    padding: 3rem 0;
 }
 
+.gallery {
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+    .gallery-item {
+        width: 48%;
+        margin-left: 1rem;
+    }
+}
 
-    .col-half {
-        flex: 0 0 calc(100% / 12 * 6);
+.card {
+
+    .card-heading {
+        padding: 1rem 0;
+
+        .card-title {
+            margin: .5rem 0;
+        }
+
+        .tags {
+            text-transform: uppercase;
+            font-size: .8em;
+        }
     }
 }
 
 
-// FOOTER
 
 .footer {
-    height: 40vh;
-    margin-top: 4rem;
-    background: $magenta;
-    color: #eee;
-    display: flex;
+    text-align: center;
+    padding: 8rem 0;
+    font-size: 1.2em;
 
-    h3 { color: #e1e1e1; }
+    .footer-nav {
+        margin: 3rem 0;
+
+        ul {
+            display: flex;
+            justify-content: center;
+
+            li {
+                padding: 1rem;
+            }
+        } 
+    }
 }
+
+
 

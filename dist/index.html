@@ -6,205 +6,120 @@
 
     <link rel="stylesheet" href="./css/theme.css">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
     <title>Manu Febie</title>
 </head>
 <body>
-
-   <header>
+    
+    <header>
         <div class="hero">
-            <div class="navbar">
+            <div class="hero-bar">
                 <div class="container">
-                    <nav>
-                        <ul>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Blog</a></li>
-                            <li><a href="">Contact</a></li>
-                        </ul>
-                    </nav>
+                    <div class="bar-img">
+                        <img src="" alt="">
+                    </div>
                 </div>
             </div>
+            
+            <!-- HERO CONTENT --> 
+            <div class="hero-content container"> 
+                <h1 class="display"> Hi there stranger, <br>
+                    I am <span class="highlight">Manu</span> from <span class="highlight">The Netherlands</span> <br>
+                    studying <span class="highlight">computer science</span> in <span class="highlight">Jakarta</span>. <br>
+                    Nice to meet ya!
+                </h1>
+                
+                <!-- SEPARATOR -->
+                <div class="sepa"></div>
 
-            <div class="hero-display container">
-                <h1 class="hero-title">
-                    Hi, <br>
-                    I am <span class="highlight">Manu</span>
-                </h1> 
-                <p></p>
-                <!-- button for github -->
-                <div class="actions">
-                    <a href="" class="btn btn-social">
-                        <i class="las la-briefcase"></i>
-                        Projects
+                <p class="tagline">I develop web applications. Scroll down and see my creations!</p>
+                <div class="action">
+                    <a href="https://github.com/manu-febie" class="btn">
+                        <i class="lab la-github"></i>
+                        github
                     </a>
                 </div>
             </div>
+            <!-- END CONTENT -->
+
         </div>
-   </header> 
-    
+    </header>
+
     <main>
-        <section class="section" id="about">
-            <div class="container">
-                <h1>Who am I?</h1>
-                <p>
-                    I entered the world of ones and zeros with my vocational education focussing on application development 
-                    in The Netherlands in 2016, and moved to Jakarta in 2018 to study Computer Science at Bina Nusantara University 
-                    International. Since then I have developed a great passion for web development. I also am big GNU/Linux geek and 
-                    supporter of open source software.
-                </p>
-                <p>
-                    View my projects <a href="#projects">here</a> or on <a href="https://github.com/manu-febie">github</a>. You can also watch
-                    me on <a href="">YouTube</a>
-                </p>
-            </div>
-        </section>
         <section class="section" id="projects">
             <div class="container">
-                <h1>Projects</h1>
+                <div class="gallery">
 
-                <!-- mosaic gallery -->
-                <div class="masonry-gallery">
                     <div class="gallery-item">
-                        <div class="card shadow">
-                            <!-- <span class="card-title">Database Systems</span> -->
+                        <div class="card">
+                            <div class="card-heading">
+                                <h1 class="card-title">E Commerce <i class="las la-arrow-right"></i> </h1>
+                                <span class="tags">E-Commerce build with Flask, MySQL and Materialize</span>
+                            </div>
                             <div class="card-img">
-                                <img src="./img/ecommerce.jpg" alt="">
-                            </div>
-                            <div class="card-content">
-                                <span class="tags">
-                                    <i class="las la-code"></i>
-                                    FLASK, MATERIALIZE, MYSQL
-                                </span>
-                                <p>Developed for database systems courses' final project</p>
-                            </div>
-                            <div class="card-action">
-                                <a href="https://github.com/manu-febie/isys6161-database-systems" class="btn">Source</a>
+                                <img src="./img/ecommerce.jpg" alt="" srcset="" class="shadow">
                             </div>
                         </div>
                     </div>
 
                     <div class="gallery-item">
-                        <div class="card shadow">
+                        <div class="card">
+                            <div class="card-heading">
+                                <h1 class="card-title">Task Manager API <i class="las la-arrow-right"></i> </h1>
+                                <span class="tags">NodeJS, MongoDB</span>
+                            </div>
                             <div class="card-img">
-                                <img src="./img/real_estate.jpg" alt="" srcset="">
-                            </div>
-                            <div class="card-content">
-                                <span class="tags">
-                                    <i class="las la-code"></i>
-                                    Django, sqlite
-                                </span>
-                                <p>
-                                A real estate web application build with Django for the Introduction to Programming course.
-                                </p>
-                            </div>
-                            <div class="card-action">
-                                <a href="" class="btn">Source</a>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="gallery-item">
-                        <div class="card shadow">
-                            <div class="card-img">
-                                <img src="./img/task-manager.jpg" alt="" srcset="">
-                            </div>
-                            <div class="card-content">
-                                <span class="tags">
-                                    <i class="las la-code">
-                                        NodeJS, ExpressJS
-                                    </i>
-                                </span>
-                                <p>An API for a simple task manager</p>
-                            </div>
-                            <div class="card-action">
-                                <a href="" class="btn">Source</a>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="gallery-item">
-                        <div class="card shadow">
-                            <div class="card-img">
-                                <img src="./img/covid-vaccine.jpg" alt="" srcset="">
-                            </div>
-                            <div class="card-content">
-                                <span class="tags">
-                                    <i class="las la-code"></i>
-                                    python, spacy
-                                </span>
-                                <p>
-                                    A Natural Language Processing project testing a hypothesis regarding the development of the COVID-19 vaccine for the Data Science course.
-                                </p>
-                                <span class="status">
-                                    IN PROGRESS
-                                </span>
-                            </div>
-                            <div class="card-action">
-                                <a href="" class="btn">Source</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="gallery-item">
-                        <div class="card shadow">
-                            <div class="card-img">
-                                <img src="./img/sneakers.jpg" alt="" srcset="">
-                            </div>
-                            <div class="card-content">
-                                <div class="card content">
-                                    <span class="tags">
-                                        <i class="las la-code"></i>
-                                        babylonjs
-                                    </span>
-                                    <p>
-                                        A 3D ecommerce build with BabylonJS for my Computer Graphics course
-                                    </p>
-                                    <span class="status">
-                                        IN PROGRESS
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="card-action">
-                                <a href="" class="btn">Source</a>
+                                <img src="./img/sneakers.jpg" alt="" srcset="" class="shadow">
                             </div>
                         </div>
                     </div>
                     
+                    <div class="gallery-item">
+                        <div class="card">
+                            <div class="card-heading">
+                                <h1 class="card-title">Real Estates <i class="las la-arrow-right"></i> </h1>
+                                <span class="tags">Real Estates property advertisment web app build with Django</span>
+                            </div>
+                            <div class="card-img">
+                                <img src="./img/real_estate.jpg" alt="" srcset="" class="shadow">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
             </div>
         </section>
     </main>
 
     <footer class="footer">
         <div class="container">
-        <div class="row">
-            <div class="col-half">
-                <p>Hello</p>
-            </div>
-            <div class="col-half">
-                <h3>Hello World</h3>
-            </div>
-        </div>
+            <h1 class="display">Get in contact</h1>
+            
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/manufebie/"><i class="lab la-linkedin-in"></i></a></li>
+                    <li><a href="https://www.instagram.com/manufebie/"><i class="lab la-instagram"></i></a></li>
+                    <li><a href="https://github.com/manu-febie"><i class="lab la-github"></i></a></li>
+                    <li><a href=""><i class="lab la-youtube"></i></a></li>
+                    <li><a href="mailto:imanuelfebie@gmail.com">imanuelfebie@gmail.com</a></li>
+                </ul>
+
+            </nav>
+
         </div>
     </footer>
 
-    <script>
-        const typeWriter = (elem, words, wait) => {
-            this.elem = elem
-            this.words = words
-        }
+    <!-- <script src="./js/main.js" type="module"></script> -->
 
+    <script>
+        // masonry layout
         window.onload = () => {
-            const elem = document.querySelector('.masonry-gallery')
-            const msnry = new Masonry( elem, {
+            const gallery = document.querySelector('.gallery')
+            
+            const masonry = new Masonry(gallery, {
                 itemSelector: '.gallery-item',
             })
         }
     </script>
-
 </body>
 </html>
