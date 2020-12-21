@@ -1,0 +1,25 @@
+// Tablets & smaller
+@media(max-width: 800px) {
+    /* change the fontsize of the hero display */ 
+
+    .hero {
+        .hero-content {
+            .sepa {
+                width: 70%;
+            }
+        }
+    }
+
+    .display {
+        font-size: 2em;
+    }
+
+    /* gallery-item 100% width */
+    .gallery {
+        .gallery-item {
+            width: 100%;
+            margin: 1%;
+        }
+    }
+}
+

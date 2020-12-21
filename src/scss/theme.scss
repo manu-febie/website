@@ -178,6 +178,7 @@ li {
         ul {
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
 
             li {
                 padding: 1rem;
@@ -186,5 +187,6 @@ li {
     }
 }
 
-
+// import
+@import 'media';
 
