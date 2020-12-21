@@ -42,6 +42,12 @@ li {
   font-family: 'Reenie Beanie', cursive;
   font-size: 1.5em; }
 
+.typer .txt {
+  border-right: 0.1rem solid #ea6962; }
+
+.txt {
+  color: #ea6962; }
+
 .shadow {
   box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2); }
 
