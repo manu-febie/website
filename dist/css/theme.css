@@ -85,17 +85,16 @@ li {
   height: 100%;
   padding: 3rem 0; }
 
-.gallery .gallery-item {
-  width: 48%;
-  margin-left: 1rem; }
-
-.card .card-heading {
-  padding: 1rem 0; }
-  .card .card-heading .card-title {
-    margin: .5rem 0; }
-  .card .card-heading .tags {
-    text-transform: uppercase;
-    font-size: .8em; }
+.card {
+  display: flex;
+  border-radius: 15px;
+  background-color: #eee;
+  color: #2e2e2c; }
+  .card .card-content {
+    padding: 4rem; }
+  .card .card-img {
+    border-radius: 15px;
+    padding: 4rem; }
 
 .footer {
   text-align: center;
