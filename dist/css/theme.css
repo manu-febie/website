@@ -110,6 +110,9 @@ li {
       .footer .footer-nav ul li {
         padding: 1rem; }
 
+.link {
+  color: #eee; }
+
 @media (max-width: 800px) {
   /* change the fontsize of the hero display */
   .hero .hero-content .sepa {
