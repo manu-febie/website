@@ -9,7 +9,8 @@ body {
   color: #2e2e2c;
   font-family: 'Nanum Gothic Coding', monospace;
   font-size: 16px;
-  font-weight: 400; }
+  font-weight: 400;
+  letter-spacing: .1em; }
 
 img {
   width: 100%;
@@ -57,7 +58,8 @@ li {
   border-left: 4px solid #FF8B85;
   margin: 1rem 0;
   padding: .8rem 1.5rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 1em; }
 
 .hero {
   height: 100vh;
@@ -89,13 +91,33 @@ li {
   width: 48%;
   margin-left: 1rem; }
 
-.card .card-heading {
-  padding: 1rem 0; }
+.card {
+  background: #eee;
+  padding: 2rem; }
   .card .card-heading .card-title {
-    margin: .5rem 0; }
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 2em;
+    color: #2e2e2c;
+    padding-bottom: 1rem; }
+    .card .card-heading .card-title .btn-card {
+      background-color: #ea6962;
+      color: #eee;
+      font-size: .4em;
+      font-family: 'Nanum Gothic Coding', monospace;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 1rem;
+      height: 40px;
+      margin: .5rem 0;
+      border-left: 0.4rem solid #FF8B85; }
   .card .card-heading .tags {
+    display: inline-block;
     text-transform: uppercase;
-    font-size: .8em; }
+    font-size: .8em;
+    color: #2e2e2c;
+    margin-bottom: 2rem; }
 
 .footer {
   text-align: center;
@@ -109,9 +131,6 @@ li {
       flex-wrap: wrap; }
       .footer .footer-nav ul li {
         padding: 1rem; }
-
-.link {
-  color: #eee; }
 
 @media (max-width: 800px) {
   /* change the fontsize of the hero display */

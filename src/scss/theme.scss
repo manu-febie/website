@@ -21,6 +21,7 @@ body {
     font-family: 'Nanum Gothic Coding', monospace;
     font-size: 16px;
     font-weight: 400;
+    letter-spacing: .1em;
 }
 
 img {
@@ -97,6 +98,7 @@ li {
     margin: 1rem 0;
     padding: .8rem 1.5rem;
     text-transform: uppercase;
+    font-size: 1em;
 }
 
 // hero
@@ -150,17 +152,39 @@ li {
 }
 
 .card {
+    background: $bg;
+    padding:  2rem;
 
     .card-heading {
-        padding: 1rem 0;
 
         .card-title {
-            margin: .5rem 0;
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Reenie Beanie', cursive;
+            font-size: 2em;
+            color: $fg;
+            padding-bottom: 1rem;
+            
+            .btn-card {
+                background-color: $primary;
+                color: $bg;
+                font-size: .4em;
+                font-family: 'Nanum Gothic Coding', monospace;
+                text-align: center;
+                text-transform: uppercase;
+                padding: 1rem;
+                height: 40px;
+                margin: .5rem 0;
+                border-left: .4rem solid $primary-accent;
+            }
         }
 
         .tags {
+            display: inline-block;
             text-transform: uppercase;
             font-size: .8em;
+            color: $fg;
+            margin-bottom: 2rem;
         }
     }
 }
@@ -185,10 +209,6 @@ li {
             }
         } 
     }
-}
-
-.link {
-    color: #eee;
 }
 
 // import
