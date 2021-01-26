@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "node-sass src/scss/theme.scss > dist/css/theme.css", 
     "sass": "node-sass -w src/scss -o dist/css/"
   },
   "keywords": [],
